@@ -41,7 +41,7 @@ public class GANProcess extends Comm {
             this.GANPath = WASSERSTEIN_PATH;
             this.GANDim = GAN_DIM; // Set here to avoid a null pointer later
         }else{
-            builder = new ProcessBuilder(PYTHON_PROGRAM, WASSERSTEIN_PATH, this.GANPath, this.GANDim);
+            builder = new ProcessBuilder(PYTHON_PROGRAM, WASSERSTEIN_PATH, this.GANPath, this.GANDim, "10");
         }
         builder.redirectError(Redirect.INHERIT); // Standard error will print to console
         	try {

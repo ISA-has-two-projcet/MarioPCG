@@ -29,20 +29,20 @@ import reader.JsonReader;
 public class MarioLevelPlayer {
 
 	public static final int BLOCK_SIZE = 16;
-	public static final int LEVEL_HEIGHT = 14;	
+	public static final int LEVEL_HEIGHT = 14;
 
 	public static void main(String[] args) throws IOException {
 		Settings.setPythonProgram();
 		// This is used because it contains code for communicating with the GAN
-		String GanPath = "./pytorch/newGANs/underground-30-5000/netG_epoch_4999_5641.pth";
+		String GanPath = "./pytorch/netG_epoch_5000.pth";
 				
 //		MarioEvalFunction eval = new MarioEvalFunction(GanPath, "10", 27, new AStarAgent());
-		MarioEvalFunction eval = new MarioEvalFunction(GanPath, "30", 27, new AStarAgent());
+		MarioEvalFunction eval = new MarioEvalFunction(GanPath, "32", 27, new AStarAgent());
 				
 		Level level;
 		// Read input level
 		String strLatentVector = "[0.38008529236291494, 2.5858332713963077, -1.4630186963502188, -1.7862678635010765, -1.0335279459299533, -0.11773493110277444, 0.08467946270366467, 0.7663548356502733, 0.13842765335604612, 1.4388452321808236, 3.4066329594602296, 2.884375930351188, -0.9428617373200845, -0.016960747604684467, 1.4747823819394936, -1.736013405633572, 1.6169804318066525, -0.6532868208389931, -0.10844871489900998, 1.2846070011808244, -0.7465230121640074, 0.03990740764188483, -2.0639880782679887, -0.4203812717125156, 1.2367690493011023, -1.8253191789463143, 1.3793745609009727, 0.770528774614335, -1.7541593374261806, 2.3291382704891035, -0.35647839325472475, -0.030615377272442346]";
-                if(true){
+		if(true){
 		/*if (args.length > 0) {
 			StringBuilder builder = new StringBuilder();
 			for (String str : args) {

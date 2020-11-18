@@ -1,0 +1,1009 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c98b3e96-13eb-40e3-b41c-3130ffc46638" name="Default" comment="repository refactoring; branching and freezing the code for version 2009. Developing for 2010 will continue in trunk.&#10;resources added to the engine rout; fix for the 2009 version.">
+      <change beforePath="$PROJECT_DIR$/Trunk.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Trunk.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch/idsia/mario/engine/GlobalOptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/ch/idsia/mario/engine/GlobalOptions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch/idsia/mario/engine/MarioComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/ch/idsia/mario/engine/MarioComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch/idsia/tools/EvaluationInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/ch/idsia/tools/EvaluationInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmatest/CMAMarioSolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/cmatest/CMAMarioSolver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/communication/MarioProcess.java" beforeDir="false" afterPath="$PROJECT_DIR$/communication/MarioProcess.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iMario.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/iMario.ipr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iMario.iws" beforeDir="false" afterPath="$PROJECT_DIR$/iMario.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/viewer/MarioLevelPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/viewer/MarioLevelPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pytorch/gan_optimize.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../pytorch/gan_optimize.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pytorch/generator_ws.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../pytorch/generator_ws.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pytorch/lhc_sample.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../pytorch/lhc_sample.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pytorch/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../pytorch/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pytorch/netG_epoch_5000.pth" beforeDir="false" afterPath="$PROJECT_DIR$/../../pytorch/netG_epoch_5000.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pytorch/samples/mario_fake_samples_2500.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pytorch/samples/netG_epoch_2500.pth" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../randomSamples/gaussianLevelClipped_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../randomSamples/gaussianLevelClipped_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../randomSamples/gaussianLevelClipped_10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../randomSamples/gaussianLevelClipped_10.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../randomSamples/gaussianLevelClipped_11.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../randomSamples/gaussianLevelClipped_11.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../randomSamples/gaussianLevelClipped_12.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../randomSamples/gaussianLevelClipped_12.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../randomSamples/gaussianLevelClipped_13.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../randomSamples/gaussianLevelClipped_13.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../randomSamples/gaussianLevelClipped_14.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../randomSamples/gaussianLevelClipped_14.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../randomSamples/gaussianLevelClipped_15.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../randomSamples/gaussianLevelClipped_15.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../randomSamples/gaussianLevelClipped_16.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../randomSamples/gaussianLevelClipped_16.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../randomSamples/gaussianLevelClipped_17.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../randomSamples/gaussianLevelClipped_17.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../randomSamples/gaussianLevelClipped_18.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../randomSamples/gaussianLevelClipped_18.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../randomSamples/gaussianLevelClipped_19.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../randomSamples/gaussianLevelClipped_19.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../randomSamples/gaussianLevelClipped_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../randomSamples/gaussianLevelClipped_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../randomSamples/gaussianLevelClipped_20.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../randomSamples/gaussianLevelClipped_20.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../randomSamples/gaussianLevelClipped_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../randomSamples/gaussianLevelClipped_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../randomSamples/gaussianLevelClipped_4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../randomSamples/gaussianLevelClipped_4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../randomSamples/gaussianLevelClipped_5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../randomSamples/gaussianLevelClipped_5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../randomSamples/gaussianLevelClipped_6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../randomSamples/gaussianLevelClipped_6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../randomSamples/gaussianLevelClipped_7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../randomSamples/gaussianLevelClipped_7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../randomSamples/gaussianLevelClipped_8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../randomSamples/gaussianLevelClipped_8.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../randomSamples/gaussianLevelClipped_9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../randomSamples/gaussianLevelClipped_9.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../randomSamples/gaussianLevelFull_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../randomSamples/gaussianLevelFull_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../randomSamples/gaussianLevelFull_10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../randomSamples/gaussianLevelFull_10.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../randomSamples/gaussianLevelFull_11.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../randomSamples/gaussianLevelFull_11.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../randomSamples/gaussianLevelFull_12.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../randomSamples/gaussianLevelFull_12.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../randomSamples/gaussianLevelFull_13.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../randomSamples/gaussianLevelFull_13.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../randomSamples/gaussianLevelFull_14.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../randomSamples/gaussianLevelFull_14.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../randomSamples/gaussianLevelFull_15.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../randomSamples/gaussianLevelFull_15.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../randomSamples/gaussianLevelFull_16.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../randomSamples/gaussianLevelFull_16.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../randomSamples/gaussianLevelFull_17.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../randomSamples/gaussianLevelFull_17.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../randomSamples/gaussianLevelFull_18.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../randomSamples/gaussianLevelFull_18.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../randomSamples/gaussianLevelFull_19.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../randomSamples/gaussianLevelFull_19.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../randomSamples/gaussianLevelFull_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../randomSamples/gaussianLevelFull_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../randomSamples/gaussianLevelFull_20.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../randomSamples/gaussianLevelFull_20.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../randomSamples/gaussianLevelFull_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../randomSamples/gaussianLevelFull_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../randomSamples/gaussianLevelFull_4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../randomSamples/gaussianLevelFull_4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../randomSamples/gaussianLevelFull_5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../randomSamples/gaussianLevelFull_5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../randomSamples/gaussianLevelFull_6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../randomSamples/gaussianLevelFull_6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../randomSamples/gaussianLevelFull_7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../randomSamples/gaussianLevelFull_7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../randomSamples/gaussianLevelFull_8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../randomSamples/gaussianLevelFull_8.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../randomSamples/gaussianLevelFull_9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../randomSamples/gaussianLevelFull_9.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../timeline0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../timeline0.txt" afterDir="false" />
+    </list>
+    <list id="adc6b057-e740-41ab-a983-1feef8380b3b" name="excluded from revisioning from idea" comment="excluded from revisioning from idea" />
+    <list id="e8617fd0-ceb4-42e8-9375-9c93540ebdbb" name="Failed commit: Default" comment="fast tcp usage fixes" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Commander">
+    <leftPanel />
+    <rightPanel />
+    <splitter proportion="0.5" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+    <option name="REVERSE_PATCH" value="false" />
+  </component>
+  <component name="DebuggerManager">
+    <line_breakpoints converted="true">
+      <breakpoint url="file://$PROJECT_DIR$/ch/idsia/mario/engine/LevelScene.java" line="510" class="ch.idsia.mario.engine.LevelScene" package="ch.idsia.mario.engine">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/ch/idsia/scenarios/Evolve.java" line="40" class="ch.idsia.scenarios.Evolve" package="ch.idsia.scenarios">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/ch/idsia/scenarios/CompetitionScore.java" line="31" class="ch.idsia.scenarios.CompetitionScore" package="ch.idsia.scenarios">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/competition/icegic/rafael/RjAgent.java" line="2" class="Class at RjAgent.java:2" package="">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/ch/idsia/scenarios/CompetitionScore.java" line="58" class="ch.idsia.scenarios.CompetitionScore" package="ch.idsia.scenarios">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/ch/idsia/tools/ToolsConfigurator.java" line="56" class="ch.idsia.tools.ToolsConfigurator" package="ch.idsia.tools">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/ch/idsia/mario/engine/LevelScene.java" line="246" class="ch.idsia.mario.engine.LevelScene" package="ch.idsia.mario.engine">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
+    <breakpoint_any converted="true">
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </breakpoint_any>
+    <breakpoint_rules converted="true" />
+    <ui_properties converted="true" />
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ModuleEditorState">
+    <option name="LAST_EDITED_MODULE_NAME" />
+    <option name="LAST_EDITED_TAB_NAME" />
+  </component>
+  <component name="ProjectId" id="1ictIDggTKOuHeo9BulSVzSg8Fl" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectPane">
+    <subPane>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="iMario" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Trunk" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="iMario" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Trunk" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="src" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="iMario" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Trunk" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="src" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="idsia" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+    </subPane>
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="GenerateAntBuildDialog.backupFiles" value="true" />
+    <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
+    <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
+    <property name="GenerateAntBuildDialog.generateIdeaHomeProperty" value="false" />
+    <property name="GenerateAntBuildDialog.generateSingleFile" value="false" />
+    <property name="GenerateAntBuildDialog.inclineRuntiemClasspath" value="false" />
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunManagerConfig.showSettingsBeforeRunnig" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../lib/jdom.jar" />
+    <property name="options.lastSelected" value="File.Encoding" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Dev\GitRepo\MarioGAN_NewPytorch\marioaiDagstuhl\src\cmatest" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="communication" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="ch.idsia.tools.tcp" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.MarioLevelPlayer">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+    </configuration>
+    <configuration default="true" type="PythonUnitTestConfigurationType" factoryName="Python's unittest">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <envs />
+      <module name="Trunk" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+    </configuration>
+    <configuration default="true" type="ScalaTestRunConfiguration" factoryName="ScalaTest">
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+    </configuration>
+    <configuration default="true" type="SpecsRunConfiguration" factoryName="Specs">
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
+      <Host>localhost</Host>
+      <Port>5050</Port>
+    </configuration>
+    <configuration name="CMAMarioSolver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cmatest.CMAMarioSolver" />
+      <module name="Trunk" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../.." />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cmatest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CompetitionScore" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="ch.idsia.scenarios.CompetitionScore" />
+      <module name="Trunk" />
+      <option name="PROGRAM_PARAMETERS" value="AdaptiveAgent 0" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="53099" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomRun" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ch.idsia.scenarios.CustomRun" />
+      <module name="Trunk" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ch.idsia.scenarios.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Evolve" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="ch.idsia.scenarios.Evolve" />
+      <module name="Trunk" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="59910" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ForwardAgent" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="ch.idsia.scenarios.MainRun" />
+      <module name="Trunk" />
+      <option name="PROGRAM_PARAMETERS" value="-pr on -ag ForwardAgent -vaot on -vlx 1044 -t off -ll 1500 -maxFPS on -ld 42" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="65471" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Human" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="ch.idsia.scenarios.MainRun" />
+      <module name="Trunk" />
+      <option name="PROGRAM_PARAMETERS" value="-pr on -t off -vaot on -ll 1000 -ld 0 -i on" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LevelEditor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ch.idsia.mario.engine.mapedit.LevelEditor" />
+      <module name="Trunk" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ch.idsia.mario.engine.mapedit.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainRun" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="ch.idsia.scenarios.MainRun" />
+      <module name="Trunk" />
+      <option name="PROGRAM_PARAMETERS" value="-vaot on -vlx 1044 -vis off -ls 17654 -maxFPS off -vis on" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="61105" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MarioLevelPlayer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="viewer.MarioLevelPlayer" />
+      <module name="Trunk" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../.." />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="viewer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PaperEvolve" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ch.idsia.scenarios.test.PaperEvolve" />
+      <module name="Trunk" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ch.idsia.scenarios.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Play" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="ch.idsia.scenarios.Play" />
+      <module name="Trunk" />
+      <option name="WORKING_DIRECTORY" value="file:///Users/Duke/Projects/iMario/trunk/classes" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="50441" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="toolsConfigurator" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="ch.idsia.tools.ToolsConfigurator" />
+      <module name="Trunk" />
+      <option name="PROGRAM_PARAMETERS" value="-gvc on -tc on -gv on -ld 0 -pr on -t off -lt 0" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="57255" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.MainRun" />
+      <item itemvalue="Application.ForwardAgent" />
+      <item itemvalue="Application.Human" />
+      <item itemvalue="Application.toolsConfigurator" />
+      <item itemvalue="Application.Evolve" />
+      <item itemvalue="Application.CompetitionScore" />
+      <item itemvalue="Application.Play" />
+      <item itemvalue="Application.MarioLevelPlayer" />
+      <item itemvalue="Application.LevelEditor" />
+      <item itemvalue="Application.PaperEvolve" />
+      <item itemvalue="Application.CMAMarioSolver" />
+      <item itemvalue="Application.CustomRun" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MarioLevelPlayer" />
+        <item itemvalue="Application.CMAMarioSolver" />
+        <item itemvalue="Application.CustomRun" />
+        <item itemvalue="Application.PaperEvolve" />
+        <item itemvalue="Application.LevelEditor" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="StarteamConfiguration">
+    <option name="SERVER" value="" />
+    <option name="PORT" value="49201" />
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="PROJECT" value="" />
+    <option name="VIEW" value="" />
+    <option name="ALTERNATIVE_WORKING_PATH" value="" />
+    <option name="LOCK_ON_CHECKOUT" value="false" />
+    <option name="UNLOCK_ON_CHECKIN" value="false" />
+  </component>
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration>/Users/Duke/.subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <created>1602218628506</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1602218628506</updated>
+      <workItem from="1602218630176" duration="2996000" />
+      <workItem from="1602224882532" duration="2839000" />
+      <workItem from="1602827539255" duration="903000" />
+      <workItem from="1603195296743" duration="7679000" />
+      <workItem from="1605417372788" duration="47964000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <MESSAGE value="isMarioCarrying() feature added;&#10;available throuh Environment interface. Lets you know wheter something is in Marios' hands." />
+    <MESSAGE value="Java updates: -fastTCP default value had been set to &quot;off&quot; , canon issue fixed. ZLevel concept still under refactoring though, one bigger update is coming." />
+    <MESSAGE value="java minor update: timer issue fixed." />
+    <MESSAGE value="canon on Z1 fix" />
+    <MESSAGE value="canon on Z1 fix&#10;toolsConfigurator resurected: try to run it: java ch.idsia.tools.toolsConfigurator -gv on -gvc on -tc on and press 'Play-&gt;' when it loads." />
+    <MESSAGE value="observation after the flagpole is available" />
+    <MESSAGE value="java updates for the next run of competition." />
+    <MESSAGE value="SimpleMLPAgent null pointer exception fix." />
+    <MESSAGE value="minor fixes" />
+    <MESSAGE value="java part: future feature : on-the-fly ZLevel change, code structuring and observation fixes: default values for NONE is 0 for each type of possible entities;&#10;if no concerns, this code is going to be frozen for the first competition." />
+    <MESSAGE value="mario excluded from observations" />
+    <MESSAGE value="old name returned for getCompleteObservation" />
+    <MESSAGE value="Java updates: &#10;1. flexible Observations with respect to ZLevels. 3 new methods in Environment.java&#10;2. A tiny bit of visual interface change." />
+    <MESSAGE value="java pard updates: kill counts feature" />
+    <MESSAGE value="java part updates: minor, visual interface" />
+    <MESSAGE value="java part updates: exhastive kills count;" />
+    <MESSAGE value="java part updates: exhastive kills count; invulnerability feature added; use -i on to make Mario undead against creatures." />
+    <MESSAGE value="java pard update: xExit fix" />
+    <MESSAGE value="java part: kills count methods added to Environment interface" />
+    <MESSAGE value="java part: minor upd" />
+    <MESSAGE value="java part: submission template example. Please, follow the same structure." />
+    <MESSAGE value="java part: CompetitionScore statistics improved" />
+    <MESSAGE value="java part: minor;" />
+    <MESSAGE value="repository refactoring; branching and freezing the code for version 2009. Developing for 2010 will continue in trunk." />
+    <MESSAGE value="repository refactoring; branching and freezing the code for version 2009. Developing for 2010 will continue in trunk.&#10;resources added to the engine rout; fix for the 2009 version." />
+    <option name="LAST_COMMIT_MESSAGE" value="repository refactoring; branching and freezing the code for version 2009. Developing for 2010 will continue in trunk.&#10;resources added to the engine rout; fix for the 2009 version." />
+    <option name="UPDATE_GROUP_BY_CHANGELIST" value="true" />
+  </component>
+  <component name="VssConfiguration">
+    <option name="CLIENT_PATH" value="" />
+    <option name="SRCSAFEINI_PATH" value="" />
+    <option name="USER_NAME" value="" />
+    <option name="PWD" value="" />
+    <CheckoutOptions>
+      <option name="COMMENT" value="" />
+      <option name="DO_NOT_GET_LATEST_VERSION" value="false" />
+      <option name="REPLACE_WRITABLE" value="false" />
+      <option name="RECURSIVE" value="false" />
+    </CheckoutOptions>
+    <CheckinOptions>
+      <option name="COMMENT" value="" />
+      <option name="KEEP_CHECKED_OUT" value="false" />
+      <option name="RECURSIVE" value="false" />
+    </CheckinOptions>
+    <AddOptions>
+      <option name="STORE_ONLY_LATEST_VERSION" value="false" />
+      <option name="CHECK_OUT_IMMEDIATELY" value="false" />
+    </AddOptions>
+    <UndocheckoutOptions>
+      <option name="MAKE_WRITABLE" value="false" />
+      <option name="REPLACE_LOCAL_COPY" value="2" />
+      <option name="RECURSIVE" value="false" />
+    </UndocheckoutOptions>
+    <GetOptions>
+      <option name="REPLACE_WRITABLE" value="0" />
+      <option name="MAKE_WRITABLE" value="false" />
+      <option name="ANSWER_NEGATIVELY" value="false" />
+      <option name="ANSWER_POSITIVELY" value="false" />
+      <option name="RECURSIVE" value="false" />
+      <option name="VERSION" />
+    </GetOptions>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="440" y="98" key="#Project_Structure" timestamp="1602222589609">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="440" y="98" key="#Project_Structure/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602222589609" />
+    <state x="217" y="151" width="1092" height="715" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605439744566">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="217" y="151" width="1092" height="715" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605439744566" />
+    <state x="670" y="271" width="944" height="578" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog" timestamp="1602223904355">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="670" y="271" width="944" height="578" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602223904355" />
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605537192362">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605537192362" />
+    <state x="672" y="381" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1605421889434">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="672" y="381" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605421889434" />
+    <state width="516" height="466" key="DebuggerActiveHint" timestamp="1605620401432">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="516" height="466" key="DebuggerActiveHint/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605620401432" />
+    <state x="737" y="350" width="697" height="541" key="DetectedRootsChooserDialog" timestamp="1602223848181">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="737" y="350" width="697" height="541" key="DetectedRootsChooserDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602223848181" />
+    <state x="100" y="109" width="1736" height="856" key="DiffContextDialog" timestamp="1605603513186">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="100" y="109" width="1736" height="856" key="DiffContextDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605603513186" />
+    <state x="740" y="264" key="FileChooserDialogImpl" timestamp="1605439734387">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="264" key="FileChooserDialogImpl/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605439734387" />
+    <state width="1877" height="222" key="GridCell.Tab.0.bottom" timestamp="1605623878548">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="312" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1603213695043" />
+    <state width="1877" height="222" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605623878548" />
+    <state width="1877" height="289" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605506275770" />
+    <state width="1877" height="222" key="GridCell.Tab.0.center" timestamp="1605623878548">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="312" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1603213695043" />
+    <state width="1877" height="222" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605623878548" />
+    <state width="1877" height="289" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605506275769" />
+    <state width="1877" height="222" key="GridCell.Tab.0.left" timestamp="1605623878548">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="312" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1603213695043" />
+    <state width="1877" height="222" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605623878548" />
+    <state width="1877" height="289" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605506275769" />
+    <state width="1877" height="222" key="GridCell.Tab.0.right" timestamp="1605623878548">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="312" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1603213695043" />
+    <state width="1877" height="222" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605623878548" />
+    <state width="1877" height="289" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605506275769" />
+    <state width="1877" height="200" key="GridCell.Tab.1.bottom" timestamp="1605623645123">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="200" key="GridCell.Tab.1.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605623645123" />
+    <state width="1877" height="200" key="GridCell.Tab.1.center" timestamp="1605623645123">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="200" key="GridCell.Tab.1.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605623645123" />
+    <state width="1877" height="200" key="GridCell.Tab.1.left" timestamp="1605623645123">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="200" key="GridCell.Tab.1.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605623645123" />
+    <state width="1877" height="200" key="GridCell.Tab.1.right" timestamp="1605623645123">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="200" key="GridCell.Tab.1.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605623645123" />
+    <state x="673" y="221" key="RollbackChangesDialog" timestamp="1602225360839">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="673" y="221" key="RollbackChangesDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602225360839" />
+    <state x="89" y="108" width="1458" height="918" key="SettingsEditor" timestamp="1605502963418">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="111" y="101" width="1458" height="918" key="SettingsEditor/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605439690032" />
+    <state x="89" y="108" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1605502963418" />
+    <state x="658" y="415" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1602223682451">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="658" y="415" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602223682451" />
+    <state x="335" y="225" width="954" height="497" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1605623584610">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="335" y="225" width="954" height="497" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605623584610" />
+    <state x="883" y="158" width="1585" height="778" key="dock-window-1" timestamp="1605539626295">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="883" y="158" width="1585" height="778" key="dock-window-1/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605539626295" />
+    <state x="662" y="252" width="596" height="536" key="find.popup" timestamp="1605616820352">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1258" y="252" width="596" height="536" key="find.popup/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1603212554435" />
+    <state x="662" y="252" width="596" height="536" key="find.popup/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605616820352" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1605603002737">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605603002737" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1603201541120">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1603201541120" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/cmatest/MarioEvalFunctionImproved.java</url>
+          <line>92</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/cmatest/MarioEvalFunctionImproved.java</url>
+          <line>122</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/cmatest/CMAMarioSolver.java</url>
+          <line>122</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/cmatest/CMAMarioSolver.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/cmatest/LevelStatistics.java</url>
+          <option name="group" value="LevelStatBreakPoint" />
+          <line>204</line>
+          <option name="timeStamp" value="45" />
+          <group>LevelStatBreakPoint</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/cmatest/LevelStatistics.java</url>
+          <option name="group" value="LevelStatBreakPoint" />
+          <line>187</line>
+          <option name="timeStamp" value="48" />
+          <group>LevelStatBreakPoint</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/cmatest/LevelStatistics.java</url>
+          <option name="group" value="LevelStatBreakPoint" />
+          <line>188</line>
+          <option name="timeStamp" value="49" />
+          <group>LevelStatBreakPoint</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/cmatest/LevelStatistics.java</url>
+          <option name="group" value="LevelStatBreakPoint" />
+          <line>189</line>
+          <option name="timeStamp" value="50" />
+          <group>LevelStatBreakPoint</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/cmatest/LevelStatistics.java</url>
+          <option name="group" value="LevelStatBreakPoint" />
+          <line>191</line>
+          <option name="timeStamp" value="52" />
+          <group>LevelStatBreakPoint</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/cmatest/LevelStatistics.java</url>
+          <option name="group" value="LevelStatBreakPoint" />
+          <line>192</line>
+          <option name="timeStamp" value="53" />
+          <group>LevelStatBreakPoint</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/cmatest/LevelStatistics.java</url>
+          <option name="group" value="LevelStatBreakPoint" />
+          <line>193</line>
+          <option name="timeStamp" value="54" />
+          <group>LevelStatBreakPoint</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/cmatest/LevelStatistics.java</url>
+          <option name="group" value="LevelStatBreakPoint" />
+          <line>196</line>
+          <option name="timeStamp" value="55" />
+          <group>LevelStatBreakPoint</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/cmatest/LevelStatistics.java</url>
+          <option name="group" value="LevelStatBreakPoint" />
+          <line>198</line>
+          <option name="timeStamp" value="56" />
+          <group>LevelStatBreakPoint</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/cmatest/LevelStatistics.java</url>
+          <option name="group" value="LevelStatBreakPoint" />
+          <line>180</line>
+          <option name="timeStamp" value="57" />
+          <group>LevelStatBreakPoint</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/cmatest/LevelStatistics.java</url>
+          <option name="group" value="LevelStatBreakPoint" />
+          <line>179</line>
+          <option name="timeStamp" value="58" />
+          <group>LevelStatBreakPoint</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/cmatest/LevelStatistics.java</url>
+          <option name="group" value="LevelStatBreakPoint" />
+          <line>170</line>
+          <option name="timeStamp" value="59" />
+          <group>LevelStatBreakPoint</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/cmatest/LevelStatistics.java</url>
+          <option name="group" value="LevelStatBreakPoint" />
+          <line>171</line>
+          <option name="timeStamp" value="60" />
+          <group>LevelStatBreakPoint</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/ch/idsia/mario/engine/level/Level.java</url>
+          <option name="group" value="LevelStatBreakPoint" />
+          <line>239</line>
+          <option name="timeStamp" value="61" />
+          <group>LevelStatBreakPoint</group>
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="map" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="XPathView.XPathProjectComponent">
+    <history />
+    <find-history />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="iMario" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="Trunk" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+      </PATH_ELEMENT>
+    </PATH>
+  </component>
+</project>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="realm-cig2010">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/realm-cig2010.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

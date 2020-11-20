@@ -9,7 +9,9 @@ import basicMap.Settings;
 import ch.idsia.tools.EvaluationInfo;
 import fr.inria.optimization.cmaes.CMAEvolutionStrategy;
 import fr.inria.optimization.cmaes.fitness.IObjectiveFunction;
+import marioPCGui.GuiLauncher;
 
+import javax.security.auth.callback.Callback;
 import java.io.FileWriter;
 import java.io.PrintWriter;
 import java.io.IOException;
@@ -17,16 +19,33 @@ import java.io.IOException;
 public class CMAMarioSolver {
 	// Sebastian's Wasserstein GAN expects latent vectors of length 32
 	public static final int Z_SIZE = 32; // length of latent space vector
-	public static final int EVALS = 1000;
+	public static final int EVALS = 1;
 
-	
+	public static GuiLauncher.CMAFinishCallBack finishCallBack = null;
+
     public static void main(String[] args) throws IOException {
+        runCMAMarioSolver();
+        System.exit(0);
+
+    }
+
+    public static void invokeCMASolverFromUI(GuiLauncher.CMAFinishCallBack cmaFinishCallback) throws IOException {
+
+        finishCallBack = cmaFinishCallback;
+        runCMAMarioSolver();
+    }
+
+    public static void runCMAMarioSolver() throws IOException {
         Settings.setPythonProgram();
-        int loops = 20;
+        int loops = 1;
         double[][] bestX = new double[loops][32];
         double[] bestY = new double[loops];
         MarioEvalFunctionImproved marioEvalFunction = new MarioEvalFunctionImproved();
+
+
         for(int i=0; i<loops; i++){
+
+            GuiLauncher.setProgress(0, EVALS, i, loops);
             System.out.println("Iteration:"+ i);
             CMAMarioSolver solver = new CMAMarioSolver(marioEvalFunction, Z_SIZE, EVALS);
             FileWriter write = new FileWriter("timeline"+i+".txt", true);
@@ -39,15 +58,22 @@ public class CMAMarioSolver {
         }
         marioEvalFunction.exit();
         System.out.println("Done");
-        FileWriter write = new FileWriter("ex_output.txt", true);
-            try (PrintWriter print_line = new PrintWriter(write)) {
-                for(int i=0;i<loops; i++){
-                    print_line.println(Arrays.toString(bestX[i]));
-                }
-                print_line.println(Arrays.toString(bestY));
+        FileWriter write = new FileWriter("ex_output.txt", false);
+        try (PrintWriter print_line = new PrintWriter(write)) {
+            for(int i=0;i<loops; i++){
+                //print_line.println("x - " + i);
+                print_line.println(Arrays.toString(bestX[i]));
             }
+            //print_line.println("y - ");
+            print_line.println(Arrays.toString(bestY));
+        }
         System.out.println(Arrays.toString(bestY));
-        System.exit(0);
+
+
+        if(finishCallBack != null) {
+            finishCallBack.execute(bestX, bestY);
+            finishCallBack = null;
+        }
     }
 
     IObjectiveFunction fitFun;
@@ -138,6 +164,8 @@ public class CMAMarioSolver {
                 step++;
 
             }
+            GuiLauncher.setProgress(step);
+
             cma.updateDistribution(fitness);         // pass fitness array to update search distribution
             // --- end core iteration step ---
 

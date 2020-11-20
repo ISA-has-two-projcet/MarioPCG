@@ -99,6 +99,7 @@ public class MarioEvalFunction implements IObjectiveFunction {
         
         public void exit() throws IOException{
             ganProcess.commSend("0");
+            marioProcess.stopProcess();
         }
 
 	/**

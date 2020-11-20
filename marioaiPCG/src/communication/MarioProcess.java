@@ -17,6 +17,8 @@ import competition.icegic.robin.AStarAgent;
 import competition.cig.slawomirbojarski.MarioAgent;
 import competition.cig.spencerschumann.SpencerSchumann_SlideRule;
 
+import java.awt.event.WindowEvent;
+
 public class MarioProcess extends Comm {
     private EvaluationOptions evaluationOptions;
     private Simulation simulator;
@@ -54,7 +56,8 @@ public class MarioProcess extends Comm {
         if(agent.getType()==AGENT_TYPE.AI) evaluationOptions.setTimeLimit(20);
         // TODO: Make these configurable from commandline?
         evaluationOptions.setMaxFPS(agent.getType()==AGENT_TYPE.AI); // Slow for human players, fast otherwise
-        evaluationOptions.setVisualization(true); // Set true to watch evaluations
+        //evaluationOptions.setVisualization(true); // Set true to watch evaluations
+        evaluationOptions.setVisualization(agent.getType()!=AGENT_TYPE.AI);
         // Create Mario Component
         ToolsConfigurator.CreateMarioComponentFrame(evaluationOptions);
         evaluationOptions.setAgent(AgentsPool.getCurrentAgent());
@@ -62,7 +65,6 @@ public class MarioProcess extends Comm {
         // set simulator
         this.simulator = new BasicSimulator(evaluationOptions.getSimulationOptionsCopy());
     }
-
 
     public void setLevel(Level level) {
         evaluationOptions.setLevel(level);
@@ -85,6 +87,12 @@ public class MarioProcess extends Comm {
         return info;
     }
 
+    public void stopProcess() {
+        this.interrupt();
+        ToolsConfigurator.marioComponentFrame.dispatchEvent(new WindowEvent(ToolsConfigurator.marioComponentFrame, WindowEvent.WINDOW_CLOSING));
+        ToolsConfigurator.marioComponentFrame = null;
+    }
+
     @Override
     public void start() {
         this.launchMario();
@@ -94,4 +102,5 @@ public class MarioProcess extends Comm {
     public void initBuffers() {
 
     }
+
 }

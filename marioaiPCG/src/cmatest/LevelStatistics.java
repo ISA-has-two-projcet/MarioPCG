@@ -24,14 +24,14 @@ public class LevelStatistics {
 
         Level level;
         // Read input level
-        String strLatentVector = "";
-        if (args.length > 0) {
-            StringBuilder builder = new StringBuilder();
-            for (String str : args) {
-                builder.append(str);
-            }
-            strLatentVector = builder.toString();
-            Settings.printInfoMsg("Passed vector(s): " + strLatentVector);
+        String strLatentVector = "[[0.7223726486256712, -0.8144046463058702, -0.581285311878616, -0.281361878750429, -0.030582126682515975, 0.800782289641333, -0.008041576280385355, 0.9713680344969697, 0.27716128531508394, 0.2079059151380096, -0.8803378210802248, -0.7473451230553672, -0.2388377040116749, -0.12542953153461953, -0.3083731522514313, 0.1531946157041087, 0.8359040212591892, 0.13615080957527675, 0.044527185376987174, -0.8484191188631249, 0.835405692406362, 0.7645986800437078, -0.2040729470895779, 0.4662541740756924, 0.18993431141898137, -0.4121439322558321, -1.1069273558973947, -0.9138044261807096, -0.5372303974722598, -0.38982685080834667, 0.8900294226441797, -0.3146479973878492], [0.6273941395707298, -0.9427500090478498, -0.5290874882311567, 0.852353248733728, 0.14645202803438054, -1.108995213701999, 0.2550097127073096, 0.6851574109321987, 0.7428163820105644, 0.6511184458635828, -0.3201412289656914, -0.545551788916962, 0.49859294331285875, 0.4675868229106976, -0.802305109173559, 0.539902671356367, 1.4448418064525828, 1.765386314148962, 1.0090532316214686, 0.09945767778801401, -0.3562897260838752, -0.2891259372194832, 0.6772946320165032, 1.159098080696282, 0.8313164684773304, 0.5251534615202216, 0.729715907681231, -0.558702402625405, 1.3891140811189535, 1.1936680173083096, -0.9645974904199145, -1.044879475850995]]";
+        if (true) {
+//            StringBuilder builder = new StringBuilder();
+//            for (String str : args) {
+//                builder.append(str);
+//            }
+//            strLatentVector = builder.toString();
+//            Settings.printInfoMsg("Passed vector(s): " + strLatentVector);
             // If the input starts with two square brackets, then it must be an array of arrays,
             // and hence a series of several latent vectors rather than just one. In this case,
             // patch all of the levels together into one long level.
@@ -80,6 +80,9 @@ public class LevelStatistics {
 
         LevelStatistics levelStats = new LevelStatistics(level);
         System.out.println("Broken Pipe Tiles: " + levelStats.numBrokenPipeTiles);
+        System.out.println("numGroundRocks:" + levelStats.numGroundRocks);
+        System.out.println("Stuck: " + levelStats.numStuckEnemy);
+        System.out.println("Goombas: " + levelStats.numGoombas);
         System.out.println(levelStats.gapFitness());
 
 
@@ -113,6 +116,9 @@ public class LevelStatistics {
     public int numGaps = MagicNumberUndef;
     /* Number of goombas */
     public int numGoombas = MagicNumberUndef;
+    /* Number of stuck enemy */
+    public int numStuckEnemy = MagicNumberUndef;
+
 
     public LevelStatistics(Level level) {
         this.level = level;
@@ -123,9 +129,8 @@ public class LevelStatistics {
         numGroundRocks = 0;
         numGaps = 0;
         numGoombas = 0;
-        System.out.println("LevelStatistics: before precessLevel()");
+        numStuckEnemy = 0;
         processLevel();
-        System.out.println("LevelStatistics: after precessLevel()");
     }
 
     public UnaryOperator<Double> optTransform(double opt, double mult) {
@@ -197,6 +202,29 @@ public class LevelStatistics {
             numGaps++;
         if (level.getSpriteTemplate(x, y) != null && level.getSpriteTemplate(x, y).getType() == Enemy.ENEMY_GOOMBA)
             numGoombas++;
+        if ( level.getSpriteTemplate(x, y) != null &&
+                (level.getSpriteTemplate(x, y).getType() == Enemy.ENEMY_GOOMBA
+                || level.getSpriteTemplate(x, y).getType() == Enemy.ENEMY_GREEN_KOOPA
+                || level.getSpriteTemplate(x, y).getType() == Enemy.ENEMY_RED_KOOPA) && checkStuckEnemy(x, y)) {
+            numStuckEnemy++;
+        }
+    }
+
+    private boolean checkStuckEnemy(int x, int y) {
+        if(level.getBlock(x, y) != EMPTY_SPACE) {
+            return true;
+        }
+
+        if(x - 1 >= 0 && level.getBlock(x - 1 , y) != EMPTY_SPACE
+            && x + 1 < level.width && level.getBlock(x + 1, y) != EMPTY_SPACE) {
+            return true;
+        }
+
+        if(y + 1 < level.height && level.getBlock(x, y + 1) != EMPTY_SPACE) {
+            return true;
+        }
+
+        return false;
     }
 
     private void processLevel() {

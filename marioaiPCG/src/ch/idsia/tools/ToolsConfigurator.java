@@ -84,7 +84,7 @@ public class ToolsConfigurator extends JFrame
 
 
 
-    private static JFrame marioComponentFrame = null;
+    public static JFrame marioComponentFrame = null;
     public static void CreateMarioComponentFrame()
     {
         CreateMarioComponentFrame(new EvaluationOptions());
@@ -102,7 +102,7 @@ public class ToolsConfigurator extends JFrame
             marioComponent.init();
             marioComponentFrame.pack();
             marioComponentFrame.setResizable(false);
-            marioComponentFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            marioComponentFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         }
 //        marioComponentFrame.setTitle(evaluationOptions.getAgent().getName() + " - Mario Intelligent 2.0");
         marioComponentFrame.setAlwaysOnTop(evaluationOptions.isViewAlwaysOnTop());

@@ -3,6 +3,7 @@ package cmatest;
 import ch.idsia.mario.engine.level.Level;
 import ch.idsia.mario.engine.level.LevelParser;
 import ch.idsia.tools.EvaluationInfo;
+import ch.idsia.tools.ToolsConfigurator;
 import communication.GANProcess;
 import communication.MarioProcess;
 import fr.inria.optimization.cmaes.fitness.IObjectiveFunction;
@@ -77,6 +78,7 @@ public class MarioEvalFunctionImproved implements IObjectiveFunction {
         
         public void exit() throws IOException{
             ganProcess.commSend("0");
+            marioProcess.stopProcess();
         }
 
 	/**
@@ -91,7 +93,6 @@ public class MarioEvalFunctionImproved implements IObjectiveFunction {
 		// Brackets required since generator.py expects of list of multiple levels, though only one is being sent here
 		ganProcess.commSend("[" + Arrays.toString(x) + "]");
 		String levelString = ganProcess.commRecv(); // Response to command just sent
-		System.out.println("levelFromLatentVector: after commRecv()");
 		Level[] levels = marioLevelsFromJson("[" +levelString + "]"); // Really only one level in this array
 		Level level = levels[0];
 		return level;
@@ -113,7 +114,7 @@ public class MarioEvalFunctionImproved implements IObjectiveFunction {
 		String levelString = ganProcess.commRecv(); // Response to com	mand just sent
 		return levelString;
 	}
-	
+
 	/**
 	 * Gets objective score for single latent vector.
 	 */
@@ -123,7 +124,6 @@ public class MarioEvalFunctionImproved implements IObjectiveFunction {
 			Level level = levelFromLatentVector(x);
 			// Do a simulation
 			EvaluationInfo info = this.marioProcess.simulateOneLevel(level);
-			System.out.println("valueOf: after simulaeOneLevel");
 			LevelStatistics levelStats = new LevelStatistics(level);
 			System.out.println("Broken Pipe Tiles: " + levelStats.numBrokenPipeTiles);
 			// Fitness is negative since CMA-ES tries to minimize
@@ -163,6 +163,7 @@ public class MarioEvalFunctionImproved implements IObjectiveFunction {
 					- levelStats.numValidPipeTiles * EvaluationInfo.goodPipeTileWeight
 					- levelStats.gapFitness() * EvaluationInfo.gapWeight
 					- levelStats.optTransform(2, 1.5).apply((double) levelStats.numGoombas) * EvaluationInfo.enemyWeight
+					- levelStats.numStuckEnemy * EvaluationInfo.stuckEnemyWeight
 					+ penalty;
 
 		} catch (IOException e) {
@@ -196,4 +197,5 @@ public class MarioEvalFunctionImproved implements IObjectiveFunction {
 		}
 		return newArray;
 	}
+
 }

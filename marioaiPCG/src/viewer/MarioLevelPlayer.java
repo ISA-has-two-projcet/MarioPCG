@@ -109,6 +109,14 @@ public class MarioLevelPlayer {
 		marioProcess.launchMario(arguments, new HumanKeyboardAgent()); // true means there is a human player
 		ToolsConfigurator.marioComponentFrame.addWindowListener(new WindowAdapter(){
 			public void windowClosing(WindowEvent e){
+				try {
+					eval.getGanProcess().commSend("0");
+					eval.getMarioProcess().interrupt();
+					ToolsConfigurator.marioComponentFrame = null;
+
+				} catch (IOException ioException) {
+					ioException.printStackTrace();
+				}
 				if(finishCallBack != null) {
 					finishCallBack.execute();
 					finishCallBack = null;

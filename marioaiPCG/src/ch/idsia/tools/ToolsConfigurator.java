@@ -13,10 +13,7 @@ import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 import javax.swing.plaf.basic.BasicArrowButton;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.ItemEvent;
-import java.awt.event.ItemListener;
+import java.awt.event.*;
 import java.util.Random;
 import java.util.Set;
 
@@ -103,11 +100,14 @@ public class ToolsConfigurator extends JFrame
             marioComponentFrame.pack();
             marioComponentFrame.setResizable(false);
             marioComponentFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+            ImageIcon icon = new ImageIcon("./icon.png");
+            marioComponentFrame.setIconImage(icon.getImage());
         }
 //        marioComponentFrame.setTitle(evaluationOptions.getAgent().getName() + " - Mario Intelligent 2.0");
         marioComponentFrame.setAlwaysOnTop(evaluationOptions.isViewAlwaysOnTop());
         marioComponentFrame.setLocation(evaluationOptions.getViewLocation());
         marioComponentFrame.setVisible(evaluationOptions.isVisualization());
+
     }
 
     enum INTERFACE_TYPE {CONSOLE, GUI}

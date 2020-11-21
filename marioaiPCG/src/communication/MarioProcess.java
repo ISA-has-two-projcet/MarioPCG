@@ -89,8 +89,10 @@ public class MarioProcess extends Comm {
 
     public void stopProcess() {
         this.interrupt();
-        ToolsConfigurator.marioComponentFrame.dispatchEvent(new WindowEvent(ToolsConfigurator.marioComponentFrame, WindowEvent.WINDOW_CLOSING));
-        ToolsConfigurator.marioComponentFrame = null;
+        if(ToolsConfigurator.marioComponentFrame != null) {
+            ToolsConfigurator.marioComponentFrame.dispatchEvent(new WindowEvent(ToolsConfigurator.marioComponentFrame, WindowEvent.WINDOW_CLOSING));
+            ToolsConfigurator.marioComponentFrame = null;
+        }
     }
 
     @Override

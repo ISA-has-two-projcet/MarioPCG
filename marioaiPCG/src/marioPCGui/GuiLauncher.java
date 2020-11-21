@@ -115,7 +115,8 @@ public class GuiLauncher {
             } catch (IOException e) {
                 e.printStackTrace();
             }
-            updateLevelImage();
+            Integer hashCode= vectorStr.hashCode();
+            updateLevelImage(hashCode.toString());
             playButton.setEnabled(true);
             cmaButton.setEnabled(true);
         }
@@ -131,16 +132,21 @@ public class GuiLauncher {
 
     }
 
-    private static void placeButtonComponents(JPanel panel) {
-        cmaButton = new JButton("CMA-ES");
-        forceSetSize(cmaButton, 100, 50);
+    private static void placeBtnComponents(JPanel panel) {
+        Font btnFont = new Font(Font.MONOSPACED, Font.BOLD, 35);
 
+        cmaButton = new JButton("GEN LEV");
+        cmaButton.setFont(btnFont);
+        forceSetSize(cmaButton, 300, 100);
+        cmaButton.setIcon(new ImageIcon("./questionBlock.png"));
         panel.add(cmaButton);
         cmaButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 playButton.setEnabled(false);
                 cmaButton.setEnabled(false);
+                currentEval = 0; currentLoop = 0;
+                maxEval = 0; maxLoop = 0;
                 Thread thread = new Thread(new Runnable() {
                     public void run() {
                         try {
@@ -155,8 +161,10 @@ public class GuiLauncher {
             }
         });
 
-        playButton = new JButton("PLAY!");
-        forceSetSize(playButton, 100, 50);
+        playButton = new JButton("PLAY LEV");
+        forceSetSize(playButton, 300, 100);
+        playButton.setFont(btnFont);
+        playButton.setIcon(new ImageIcon("./Mario.png"));
         panel.add(playButton);
         playButton.addActionListener(new ActionListener() {
 
@@ -177,11 +185,11 @@ public class GuiLauncher {
 
                             ArrayList<LatentVectorAndFit> latentvecObjLst = getSortedLatentVecs(latentVecs, fitness);
                             String vectorStr = "";
-                            double soertedVecs[][] = new double[latentvecObjLst.size()][];
+                            double sortedVecs[][] = new double[latentvecObjLst.size()][];
                             for(int i = 0; i < latentvecObjLst.size(); i++) {
-                                soertedVecs[i] = latentvecObjLst.get(i).mVector;
+                                sortedVecs[i] = latentvecObjLst.get(i).mVector;
                             }
-                            MarioLevelPlayer.invokeLevelPlayerFromUI(gson.toJson(soertedVecs), true, new PlayFinishCallBack());
+                            MarioLevelPlayer.invokeLevelPlayerFromUI(gson.toJson(sortedVecs), true, new PlayFinishCallBack());
 
                         } catch (IOException ioException) {
                             ioException.printStackTrace();
@@ -214,8 +222,8 @@ public class GuiLauncher {
         JPanel leftPanel = new JPanel();
         forceSetSize(leftPanel, 300, 300);
 
-        leftPanel.setLayout(new FlowLayout(FlowLayout.CENTER, 100, 10));
-        placeButtonComponents(leftPanel);
+        leftPanel.setLayout(new FlowLayout(FlowLayout.CENTER, 100, 15));
+        placeBtnComponents(leftPanel);
         panel.add(leftPanel);
 
         JPanel rightPanel = new JPanel();
@@ -227,55 +235,51 @@ public class GuiLauncher {
     }
 
     private static void placeTopComponents(JPanel panel) {
-//        logTextArea=new JTextArea("",7,30);
-//        logTextArea.setLineWrap(true);
-//        JScrollPane logScrollTextArea=new JScrollPane(logTextArea);
-//
-//        logScrollTextArea.setSize(200, 200);
-//        panel.add(logScrollTextArea);
+
 
         levelImgLabel = new JLabel();
-        ImageIcon imgIcon = new ImageIcon("./logo.gif");
+        ImageIcon imgIcon = new ImageIcon("./Logo.png");
         levelImgLabel.setIcon(imgIcon);
 
         JScrollPane levelImageScroolArea = new JScrollPane(levelImgLabel);
-        forceSetSize(levelImageScroolArea, 550, 300);
+        forceSetSize(levelImageScroolArea, 535, 270);
+
+        JLabel gifImgLable = new JLabel();
+        forceSetSize(gifImgLable, 280, 270);
+        gifImgLable.setIcon(new ImageIcon("./marioStart.gif"));
 
         panel.add(levelImageScroolArea);
+        panel.add(gifImgLable);
     }
 
-    public static void setProgress(int currentEval, int maxEval, int currentLoop, int maxLoop)  {
-        if(progressBar == null) return;
-        if(progressBar.isIndeterminate() == true){
-            progressBar.setMinimum(0);
-            progressBar.setMaximum(maxEval * maxLoop);
-            progressBar.setValue(0);
-            progressBar.setIndeterminate(false);
-            GuiLauncher.currentEval = currentEval;
-            GuiLauncher.currentLoop = currentLoop;
-            GuiLauncher.maxEval = maxEval;
-            GuiLauncher.maxLoop = maxLoop;
-        }
-        else {
-            GuiLauncher.currentEval = currentEval;
-            GuiLauncher.currentLoop = currentLoop;
-            progressBar.setValue(GuiLauncher.currentEval + GuiLauncher.currentLoop * GuiLauncher.maxEval);
+    public static void setProgress(int currentEval, int maxEval, int currentLoop, int maxLoop) {
+        if (progressBar == null) return;
 
-        }
+        progressBar.setMinimum(0);
+        progressBar.setMaximum(maxEval * maxLoop);
+        progressBar.setIndeterminate(false);
+        GuiLauncher.currentEval = currentEval;
+        GuiLauncher.currentLoop = currentLoop;
+        GuiLauncher.maxEval = maxEval;
+        GuiLauncher.maxLoop = maxLoop;
+        progressBar.setValue(GuiLauncher.currentEval + GuiLauncher.currentLoop * GuiLauncher.maxEval);
+
 
     }
 
-    public static void updateLevelImage(){
-        ImageIcon imgIcon = new ImageIcon("./LevelFull.png");
+    public static void updateLevelImage(String surfix){
+        //ImageIcon imgIcon = new ImageIcon("./Logo.png");
+
+        ImageIcon imgIcon = new ImageIcon("./GenLevelImg/LevelFull_" + surfix + ".png");
         //Image img = imgIcon.getImage();
         //Image scaledImg = img.getScaledInstance(900, 330, Image.SCALE_SMOOTH);
         //levelImgLabel.setIcon(new ImageIcon(scaledImg));
         levelImgLabel.setIcon(imgIcon);
     }
 
-    public static void setProgress(int currentEval)  {
+    public static void setProgress()  {
         if(progressBar == null) return;
-        GuiLauncher.currentEval = currentEval;
+        GuiLauncher.currentEval++;
         progressBar.setValue(GuiLauncher.currentEval + GuiLauncher.currentLoop * GuiLauncher.maxEval);
     }
 
@@ -297,11 +301,13 @@ public class GuiLauncher {
         mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         mainFrame.setResizable(false);
         mainFrame.setLayout(new FlowLayout(FlowLayout.LEADING));
+        ImageIcon icon = new ImageIcon("./icon.png");
+        mainFrame.setIconImage(icon.getImage());
 
         JPanel topPanel = new JPanel();
         forceSetSize(topPanel, 900, 300);
         mainFrame.add(topPanel);
-        topPanel.setLayout(new BoxLayout(topPanel, BoxLayout.X_AXIS));
+        topPanel.setLayout(new FlowLayout(FlowLayout.LEADING, 15, 15));
         placeTopComponents(topPanel);
 
         JPanel bottomPanel = new JPanel();
@@ -335,7 +341,7 @@ public class GuiLauncher {
 
     public static void setMarioFrameFollowMain(){
         if(ToolsConfigurator.marioComponentFrame != null) {
-            ToolsConfigurator.marioComponentFrame.setLocation(mainFrame.getLocation().x + 560, mainFrame.getLocation().y + 30);
+            ToolsConfigurator.marioComponentFrame.setLocation(mainFrame.getLocation().x + 560, mainFrame.getLocation().y + 40);
             ToolsConfigurator.marioComponentFrame.toFront();
         }
     }

@@ -162,7 +162,8 @@ public class MarioEvalFunctionImproved implements IObjectiveFunction {
 					- levelStats.numBrokenPipeTiles * EvaluationInfo.badPipeTileWeight
 					- levelStats.numValidPipeTiles * EvaluationInfo.goodPipeTileWeight
 					- levelStats.gapFitness() * EvaluationInfo.gapWeight
-					- levelStats.optTransform(2, 1.5).apply((double) levelStats.numGoombas) * EvaluationInfo.enemyWeight
+					//- levelStats.optTransform(2, 1.5).apply((double) levelStats.numGoombas) * EvaluationInfo.enemyWeight
+					- (levelStats.numGoombas - levelStats.numStuckEnemy) * EvaluationInfo.enemyWeight
 					- levelStats.numStuckEnemy * EvaluationInfo.stuckEnemyWeight
 					+ penalty;
 

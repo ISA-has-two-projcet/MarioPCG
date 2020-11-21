@@ -19,7 +19,7 @@ import java.io.IOException;
 public class CMAMarioSolver {
 	// Sebastian's Wasserstein GAN expects latent vectors of length 32
 	public static final int Z_SIZE = 32; // length of latent space vector
-	public static final int EVALS = 1;
+	public static final int EVALS = 1000;
 
 	public static GuiLauncher.CMAFinishCallBack finishCallBack = null;
 
@@ -37,7 +37,7 @@ public class CMAMarioSolver {
 
     public static void runCMAMarioSolver() throws IOException {
         Settings.setPythonProgram();
-        int loops = 1;
+        int loops = 5;
         double[][] bestX = new double[loops][32];
         double[] bestY = new double[loops];
         MarioEvalFunctionImproved marioEvalFunction = new MarioEvalFunctionImproved();
@@ -55,6 +55,8 @@ public class CMAMarioSolver {
             System.out.println("Best solution = " + Arrays.toString(solution));
             bestX[i] = solution;
             bestY[i] = solver.fitFun.valueOf(solution);
+            GuiLauncher.setProgress(0, EVALS, i+1, loops);
+
         }
         marioEvalFunction.exit();
         System.out.println("Done");
@@ -164,7 +166,7 @@ public class CMAMarioSolver {
                 step++;
 
             }
-            GuiLauncher.setProgress(step);
+            GuiLauncher.setProgress();
 
             cma.updateDistribution(fitness);         // pass fitness array to update search distribution
             // --- end core iteration step ---

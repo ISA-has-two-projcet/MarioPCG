@@ -215,14 +215,14 @@ public class LevelStatistics {
             return true;
         }
 
-        if(x - 1 >= 0 && level.getBlock(x - 1 , y) != EMPTY_SPACE
-            && x + 1 < level.width && level.getBlock(x + 1, y) != EMPTY_SPACE) {
-            return true;
-        }
-
-        if(y + 1 < level.height && level.getBlock(x, y + 1) != EMPTY_SPACE) {
-            return true;
-        }
+//        if(x - 1 >= 0 && level.getBlock(x - 1 , y) != EMPTY_SPACE
+//            && x + 1 < level.width && level.getBlock(x + 1, y) != EMPTY_SPACE) {
+//            return true;
+//        }
+//
+//        if(y - 1 >= 0 && level.getBlock(x, y - 1) != EMPTY_SPACE) {
+//            return true;
+//        }
 
         return false;
     }

@@ -134,8 +134,8 @@ public class MarioLevelViewer {
 		}
 
 
-		saveLevel(level, "LevelClipped", true);
-		saveLevel(level, "LevelFull", false);
+		saveLevel(level, "./GenLevelImg/LevelClipped_" + latentVectors.hashCode(), true);
+		saveLevel(level, "./GenLevelImg/LevelFull_" + latentVectors.hashCode(), false);
 		eval.exit();
 	}
 }

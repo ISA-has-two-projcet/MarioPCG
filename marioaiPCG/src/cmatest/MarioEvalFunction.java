@@ -27,12 +27,20 @@ public class MarioEvalFunction implements IObjectiveFunction {
 
 	private GANProcess ganProcess;
 	private MarioProcess marioProcess;
-        private int fitnessFun;
+	private int fitnessFun;
 
 	// changing floor will change the reason for termination
 	// (in conjunction with the target value)
 	// see cma.options.stopFitness
 	static double floor = 0.0;
+
+	public GANProcess getGanProcess() {
+		return ganProcess;
+	}
+
+	public MarioProcess getMarioProcess() {
+		return marioProcess;
+	}
 
 	public MarioEvalFunction() throws IOException {
 		// set up process for GAN

@@ -296,7 +296,7 @@ public class GuiLauncher {
         } catch (UnsupportedLookAndFeelException e) {
             e.printStackTrace();
         }
-        mainFrame = new JFrame("Mario PCG");
+        mainFrame = new JFrame("Mario Ai PCG");
         mainFrame.setSize(900, 600);
         mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         mainFrame.setResizable(false);

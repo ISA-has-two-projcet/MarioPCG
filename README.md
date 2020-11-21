@@ -22,9 +22,13 @@
 
 ## SECTION 4 : VIDEO OF SYSTEM MODELLING & USE CASE DEMO
 
+
+
 ---
 
 ## SECTION 5 : USER GUIDE
+
+`Refer to appendix User Guide in Doc Folder: ` <a href="https://github.com/ISA-has-two-projcet/MarioPCG/blob/master/Doc/MarioAiPCGUserGuide.pdf">click here</a>
 
 ---
 

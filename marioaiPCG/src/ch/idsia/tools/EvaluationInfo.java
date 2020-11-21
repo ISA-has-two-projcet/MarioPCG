@@ -39,9 +39,9 @@ public class EvaluationInfo
     public static final int goodPipeTileWeight = 2;
     public static final int gapWeight = 2;
 
-    public static final int enemyWeight = 2;
+    public static final int enemyWeight = 5;
     public static final int repeatWeight = 2;
-    public static final int stuckEnemyWeight = -4;
+    public static final int stuckEnemyWeight = -10;
     //ZZK Added End
 
     public int levelType = MagicNumberUndef;

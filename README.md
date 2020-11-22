@@ -8,6 +8,12 @@
 
 ## SECTION 2 : EXECUTIVE SUMMARY / REPORT ABSTRACT
 
+Our system is a game development system that integrates "automatic generation", "automatic testing" and "level selection". It is committed to solving the intelligent map design of the game industry. It uses a Procedural Content Generation (PCG) technology, which is based on Generative Adversarial Networks (GANs), Covariance Matrix Adaptation Evolution Strategy (CMA-ES), etc.
+
+The specific game in this project is Super Mario Bros, but the technique should generalize to any game for which an existing corpus of levels is available. Our GAN is trained on a single level from the original Super Mario Bros, available as part of the Video Game Level Corpus (VGLC). CMA-ES is then used to find ideal inputs to the GAN from within its latent vector space. During the evolution, the generated levels are evaluated using different fitness functions. This allows for the discovery of levels that exist between and beyond those sparse examples designed by human designers, and that also optimize additional goals. Our approach is capable of generating playable levels that meet various goals and is ready to be applied to level generation of other games, such as the games in the GVGAI framework. By training on only a single level, we are able to show that even with a very limited dataset, we can apply the presented approach successfully.
+
+The main function of our system is to be able to generate Mario game maps, and to provide automatic detection and trial play of new maps. This function is mainly realized through GAN & CMA-ES and other technologies. And our UI interface is designed based on java-swing. In the Techniques/Algorithms chapter of the project report, we discussed these technologies and algorithms in detail.
+
 ---
 
 ## SECTION 3 : CREDITS / PROJECT CONTRIBUTION

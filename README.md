@@ -20,25 +20,31 @@ The main function of our system is to be able to generate Mario game maps, and t
 
 | Official Full Name  | Student ID (MTech Applicable)  | Work Items (Who Did What) | Email (Optional) |
 | :------------ |:---------------:| :-----| :-----|
-| Tao Xiyan | A0215472J | todo:contribution | e0535562@u.nus.edu |
-| Xiao Yuchao | A0215486Y | todo:contribution | yuchao_xiao@u.nus.edu |
-| Zhang Zekun | A0215485B | todo:contribution | zhang_zekun@u.nus.edu |
+| Tao Xiyan | A0215472J | Game simulation env modification, Data process | e0535562@u.nus.edu |
+| Xiao Yuchao | A0215486Y | Algorithms design and test  | yuchao_xiao@u.nus.edu |
+| Zhang Zekun | A0215485B | Overall system implementation | zhang_zekun@u.nus.edu |
 
 ---
 
 ## SECTION 4 : VIDEO OF SYSTEM MODELLING & USE CASE DEMO
-
+<div align="center">
+  <a href="https://www.youtube.com/watch?v=8DqB3CmwDFo">
+    <img src="https://zekunsgames.oss-us-west-1.aliyuncs.com/MarioAiPCGCover.png" alt="Project Introduction Video">
+  </a>
+</div>
 
 
 ---
 
 ## SECTION 5 : USER GUIDE
 
-`Refer to appendix User Guide in Doc Folder: ` <a href="https://github.com/ISA-has-two-projcet/MarioPCG/blob/master/Doc/MarioAiPCGUserGuide.pdf">click here</a>
+`Refer to appendix User Guide in ProjectReport Folder: ` <a href="https://github.com/ISA-has-two-projcet/MarioPCG/blob/master/ProjectReport/MarioAiPCGUserGuide.pdf">click here</a>
 
 ---
 
 ## SECTION 6 : PROJECT REPORT / PAPER
+
+`Report: ` <a href="https://github.com/ISA-has-two-projcet/MarioPCG/blob/master/ProjectReport/ISA-IPA-2020-11-23-IS01FT-GRP-MarioAIPCG-GameAgent.pdf">click here</a>
 
 ---
 
